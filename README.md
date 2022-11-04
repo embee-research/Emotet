@@ -2,6 +2,10 @@
 
 A script to perform lookups of API hashes utilised by recent (2022-November) Emotet Samples. 
 
+Written by @embee_research @Huntresslabs
+- https://twitter.com/embee_research
+- https://www.huntress.com/
+
 ## Usage
 
 `emotet_hashing.py <hash_value>`
