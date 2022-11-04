@@ -8,9 +8,18 @@ Written by @embee_research @Huntresslabs
 
 ## Usage
 
-`emotet_hashing.py <hash_value>`
+
+`emotet_hashing.py <hash_value>` 
+
+(Make sure to place the relevant dll's in the same folder as the script so that they can be parsed correctly, or place the script in the c:\\windows\\system32\\ folder)
+
 
 <img width="614" alt="image" src="https://user-images.githubusercontent.com/82847168/199856599-cd6b3c3c-607d-42dd-b468-b96420a27d0f.png">
+
+
+
+<img width="990" alt="image" src="https://user-images.githubusercontent.com/82847168/199859979-ea07346d-c25c-49d1-90d1-efac694c4465.png">
+
 
 
 ## Samples 
@@ -20,7 +29,7 @@ Written by @embee_research @Huntresslabs
 ## Notes
 - The above links are to packed emotet samples, you will need to unpack them first. (VirtualAlloc + Hardware Breakpoint will work)
 - The Emotet samples have a key that is used to encode the API hashes, this changes between samples and you may need to update it. 
-- To find the key
+- To find the key, locate the function that hashes the api name, and note the key after the return. 
 
 <img width="554" alt="image" src="https://user-images.githubusercontent.com/82847168/199857070-8372737a-d143-4e9f-9241-7217b6412a99.png">
 
