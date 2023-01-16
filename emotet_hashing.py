@@ -26,6 +26,7 @@ def calc_hash(name):
         output = output * 0x1003f + ord(c)
     output = output & 0xffffffff
     output = output ^ xor_value
+    #uncomment the hex piece to return decimal values
     return hex(output)
 
 #Parse the export list from a dll file
